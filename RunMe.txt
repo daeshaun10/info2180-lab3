@@ -1,0 +1,2 @@
+1. Open index file from your browser.
+2. Play Tic Tac Toe. 
