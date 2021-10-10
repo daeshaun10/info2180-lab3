@@ -13,19 +13,22 @@
         <h1>Tic <span>-Tac-</span> Toe</h1>
  <div id="game">
          <div id="status">Move your mouse over a square and click to play an X or an O.</div>
-        <div class="board">
-            <div data-cell-index="0" class="cell"></div>
-            <div data-cell-index="1" class="cell"></div>
-            <div data-cell-index="2" class="cell"></div>
-            <div data-cell-index="3" class="cell"></div>
-            <div data-cell-index="4" class="cell"></div>
-            <div data-cell-index="5" class="cell"></div>
-            <div data-cell-index="6" class="cell"></div>
-            <div data-cell-index="7" class="cell"></div>
-            <div data-cell-index="8" class="cell"></div>
+        <div id="board">
+            <div data-cell-index="0" class="cell" ></div>
+            <div data-cell-index="1" class="cell" ></div>
+            <div data-cell-index="2" class="cell" ></div>
+            <div data-cell-index="3" class="cell" ></div>
+            <div data-cell-index="4" class="cell" ></div>
+            <div data-cell-index="5" class="cell" ></div>
+            <div data-cell-index="6" class="cell" ></div>
+            <div data-cell-index="7" class="cell" ></div>
+            <div data-cell-index="8" class="cell" ></div>
         </div>
-        <h2 class="game--status"></h2>
+	</div>	
+       <div class="controls">
+	   <h2 class="game--status"></h2> 
         <button class="game--restart">New Game</button>
+
     </section >
 
     <script src="tic_tac.js"></script>
@@ -39,25 +42,12 @@ function myFunction() {
 var x = document.querySelectorAll('div');    
  var i;
     for (i = 0; i < x.length; i++) {
-      x[i].classList.add("square");
-
-x[i].addEventListener("mouseover", function( event ) {
-  // highlight the mouseover target
-  event.target.style = "hover";
-
-  // reset the color after a short delay
-  setTimeout(function() {
-    event.target.style.color = "";
-  }, 500);
-}, false);
-
-
+      x[i].classList.add("square2");
+	 
     }
-
-
-
-
-
-
-}
+	}
 </script>
+
+
+
+
