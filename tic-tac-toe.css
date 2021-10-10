@@ -106,6 +106,12 @@ h1 span {
   cursor: pointer;
 }
 
+.cell:hover {
+  background: var(--coral);
+  border-color: var(--lighterBlue);
+  cursor: pointer;
+}
+
 .hover.O {
   color: white;
 }
